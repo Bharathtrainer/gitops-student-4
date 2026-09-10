@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gitops-demo-student4
+spec:
+  selector:
+    app: gitops-demo-student4
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP

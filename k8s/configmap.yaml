@@ -4,5 +4,5 @@ metadata:
   name: gitops-demo-student4-config
 data:
   APP_NAME: gitops-demo-student4
-  APP_VERSION: v1
+  APP_VERSION: v2
   ENVIRONMENT: workshop

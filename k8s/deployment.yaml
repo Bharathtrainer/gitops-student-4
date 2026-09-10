@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gitops-demo-student4
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: gitops-demo-student4

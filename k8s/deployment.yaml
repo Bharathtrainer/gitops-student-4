@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gitops-demo-student4
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: gitops-demo-student4
@@ -13,10 +13,7 @@ spec:
         app: gitops-demo-student4
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.27
-        ports:
-        - containerPort: 80
-        envFrom:
-        - configMapRef:
-            name: gitops-demo-student4-config
+        - name: nginx
+          image: a40820ab5de324d5fa6f1035631abfb0-1925417406.us-east-1.elb.amazonaws.com/student04/app:build-
+          ports:
+            - containerPort: 80

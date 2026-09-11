@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: a40820ab5de324d5fa6f1035631abfb0-1925417406.us-east-1.elb.amazonaws.com/student04/app:build-
+          image: a40820ab5de324d5fa6f1035631abfb0-1925417406.us-east-1.elb.amazonaws.com/student04/app:build-student04
           ports:
             - containerPort: 80
